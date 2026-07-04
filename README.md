@@ -63,9 +63,6 @@ alias pi='docker run -it --cap-drop ALL --security-opt no-new-privileges -e LITE
 
 Easy as `pi`.
 
-> 🔔 You may need to add some extra config for using codeartifact
-> for frontend you can add an anonymous volume for node_modules and pass also .npmrc as read only and that way you can re-install the dependencies inside the container.
-
 ---
 
 ## Why this image?
