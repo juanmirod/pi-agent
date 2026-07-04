@@ -1,0 +1,14 @@
+FROM qwen3.5:9b
+
+# Sample config for coding tasks: low temperature, keep context window small
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.8
+PARAMETER top_k 20
+
+PARAMETER num_ctx 32768
+PARAMETER num_predict 4096
+
+# Number of CPUs
+
+PARAMETER num_thread 8

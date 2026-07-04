@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "typescript": "^6.0.2"
+  }
+}
