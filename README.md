@@ -40,7 +40,7 @@ make run
 make run-env
 ```
 
-Or manually with Docker. You can use ai-login so you don't need to store the key anywhere:
+Or manually with Docker:
 
 ```bash
 docker run -it \
@@ -58,7 +58,7 @@ docker run -it \
 And you can create an alias so you can run it with two keystrokes (make sure you've run `make build` first):
 
 ```bash
-alias pi='docker run -it --cap-drop ALL --security-opt no-new-privileges -e LITELLM_API_KEY=$(ai-login --mode=coding --stdout) -v "$(pwd):/workspace" pi-agent'
+alias pi='docker run -it --cap-drop ALL --security-opt no-new-privileges -v "$(pwd):/workspace" pi-agent'
 ```
 
 Easy as `pi`.
@@ -79,7 +79,8 @@ The `main` branch will keep a simple image faithful to [the spirit of pi](https:
 
 If you want to share your customizations, create a branch with your user name or whatever name you want to give it and describe it below:
 
-- **sample-config-ollama**:
+## Building local models
+
   Sample config for running ollama models, includes a sample Modelfile for `qwen 3.5 9b`, (you can use `qwen 3.5 27b` depending on your machine) how to create the model image:
 
   ```shell
