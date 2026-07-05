@@ -46,7 +46,6 @@ Or manually with Docker:
 docker run -it \
   --cap-drop ALL \
   --security-opt no-new-privileges \
-  -e LITELLM_API_KEY=$(ai-login --mode=coding --stdout) \
   -v "$(pwd):/workspace" \
   pi-agent
 ```
