@@ -1,7 +1,7 @@
 # Use a lightweight Node.js image
 # Pin by multi-arch manifest digest for reproducible builds.
 # To update: check https://hub.docker.com/_/node/tags?name=24-bookworm-slim for the new digest.
-ARG NODE_IMAGE=node:24-bookworm-slim@sha256:879b21aec4a1ad820c27ccd565e7c7ed955f24b92e6694556154f251e4bdb240
+ARG NODE_IMAGE=node:24-bookworm-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
 FROM ${NODE_IMAGE}
 
 # Install git and pi-coding-agent globally
